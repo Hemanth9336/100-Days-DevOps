@@ -85,18 +85,6 @@ Each day contains:
 
 ---
 
-## 📊 Progress Tracker
-
-| Day     | Task                         | Status |
-| ------- | ---------------------------- | ------ |
-| Day 01  | Linux User Setup             | ✅      |
-| Day 02  | Temporary User Setup         | ⏳      |
-| Day 03  | Secure Root SSH Access       | 🔒     |
-| ...     | ...                          | ...    |
-| Day 100 | CloudWatch Alarm (Terraform) | 🔒     |
-
----
-
 ## 🧠 Key Skills Gained
 
 * Linux Administration
