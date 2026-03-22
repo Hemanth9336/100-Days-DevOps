@@ -58,7 +58,7 @@ useradd -s /sbin/nologin javed
 grep javed /etc/passwd
 ```
 
-Expected Output:
+**Expected Output:**
 
 ```
 javed:x:...:/sbin/nologin
@@ -66,23 +66,51 @@ javed:x:...:/sbin/nologin
 
 ---
 
-## 💡 Key Learning
+## 💡 What I Learned Today
 
-* Non-interactive users are used for automation
-* `/sbin/nologin` prevents login access
-* Important for system security
+### Basics of Linux User Management 🐧
+
+Linux user management involves creating, modifying, and deleting users to control system access. Each user has a username, UID, home directory, and shell, which defines how they interact with the system.
+
+### Difference Between Interactive and Non-Interactive Shells
+
+* **Interactive shell** (e.g., `/bin/bash`): Allows users to log in and execute commands.
+* **Non-interactive shell** (e.g., `/sbin/nologin`): Prevents user login; used for background services or system tasks.
+
+### Why System Users Are Created for Automation and Security
+
+System users are created to run applications or services instead of humans. This improves security by restricting login access and limiting permissions, ensuring services run safely without exposing the system to unnecessary risks.
 
 ---
 
-## ⚠️ Mistakes I Faced
+## 🛠️ What I Built / Practiced
 
-* Forgot to use non-interactive shell initially
-* Confused between `/bin/bash` and `/sbin/nologin`
+* Connected to Application Server (`stapp03`)
+* Created a user `javed` with a non-interactive shell (`/sbin/nologin`)
+* Verified the user and ensured login is restricted
+
+---
+
+## ⚠️ Challenges
+
+* Initially confused between `/bin/bash` and `/sbin/nologin`
+* Didn’t understand why we create users who can’t log in
+
+---
+
+## 🔧 Fix / Learning
+
+* Realized non-interactive users are used for services, not humans
+* Understood how this improves system security
+
+---
+
+## 🧩 Key Takeaway
+
+Small concepts like user shells play a big role in real-world system security.
 
 ---
 
 ## 🧩 Summary
 
 Created a secure system user that cannot log in, used for background services.
-
----
