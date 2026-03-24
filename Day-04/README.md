@@ -4,7 +4,7 @@
 
 ## 🧠 Task
 
-Grant executable permissions to the script `/tmp/xfusioncorp.sh` on **App Server 2**, ensuring all users can execute it.
+Grant executable permissions to the script `/tmp/xfusioncorp.sh` on **App Server 1**, ensuring all users can execute it.
 
 ---
 
@@ -29,15 +29,15 @@ Grant executable permissions to the script `/tmp/xfusioncorp.sh` on **App Server
 
 ### 1. Connect to Server
 
-```bash
-ssh steve@stapp02
+```bash id="k3m6vh"
+ssh tony@stapp01
 ```
 
 ---
 
 ### 2. Switch to Root
 
-```bash
+```bash id="np1xg4"
 sudo su -
 ```
 
@@ -45,7 +45,7 @@ sudo su -
 
 ### 3. Check Current Permissions
 
-```bash
+```bash id="r8h6c2"
 ls -l /tmp/xfusioncorp.sh
 ```
 
@@ -53,7 +53,7 @@ ls -l /tmp/xfusioncorp.sh
 
 ### 4. Add Execute Permission for All Users ✅
 
-```bash
+```bash id="ubc6mg"
 chmod 755 /tmp/xfusioncorp.sh
 ```
 
@@ -63,13 +63,13 @@ chmod 755 /tmp/xfusioncorp.sh
 
 ### 5. Verify Permissions
 
-```bash
+```bash id="3k4w27"
 ls -l /tmp/xfusioncorp.sh
 ```
 
 Expected Output:
 
-```
+```id="7mjlwm"
 -rwxr-xr-x ...
 ```
 
@@ -93,7 +93,7 @@ The `chmod` command is used to modify file permissions for users (owner, group, 
 
 ## 🛠️ What I Built / Practiced
 
-* Connected to Application Server (`stapp02`)
+* Connected to Application Server (`stapp01`)
 * Checked existing file permissions
 * Granted execute permission using `chmod 755`
 * Verified updated permissions
@@ -102,27 +102,29 @@ The `chmod` command is used to modify file permissions for users (owner, group, 
 
 ## ⚠️ Challenges
 
-* Initially used `chmod +x`, but it didn’t pass the validation ❌
-* Understanding how permissions apply to all users
+* Initially used `chmod +x`, but the task validation failed ❌
+* Didn’t realize some environments require explicit numeric permissions
+* Understanding how permissions apply to owner, group, and others
 
 ---
 
 ## 🔧 Fix / Learning
 
-* Used `chmod 755` to explicitly assign permissions
+* Switched to `chmod 755` for explicit permission assignment
 * Learned difference between symbolic (`+x`) and numeric (`755`) modes
+* Understood why numeric permissions are more reliable in lab environments
 
 ---
 
 ## 🧩 Key Takeaway
 
-Explicit permissions (`755`) are more reliable in controlled environments and ensure correct access.
+Explicit permissions (`755`) ensure consistent execution access across all users.
 
 ---
 
 ## 🧩 Summary
 
-```bash
+```bash id="jcv6ts"
 chmod 755 /tmp/xfusioncorp.sh
 ```
 
@@ -130,4 +132,6 @@ chmod 755 /tmp/xfusioncorp.sh
 
 ## ✅ Outcome
 
-Successfully granted executable permissions to the script for all users and resolved the validation issue.
+Successfully granted executable permissions to the script for all users on App Server 1.
+
+---
