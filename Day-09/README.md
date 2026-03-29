@@ -8,7 +8,7 @@ A critical issue was reported in the Nautilus application within the Stratos Dat
 
 After investigation, it was found that the **MariaDB service was down** on the database server.
 
-During troubleshooting, multiple issues were identified including:|
+During troubleshooting, multiple issues were identified including -
 
 * Partial/corrupted database initialization
 * Existing data directory conflicts
