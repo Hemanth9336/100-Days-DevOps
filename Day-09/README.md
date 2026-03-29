@@ -6,7 +6,7 @@
 
 A critical issue was reported in the Nautilus application within the Stratos Datacenter. The production support team identified that the application was unable to connect to the database.
 
-"After investigation, it was found that the **MariaDB service was down** on the database server."
+After investigation, it was found that the **MariaDB service was down** on the database server.
 
 During troubleshooting, multiple issues were identified including:
 
