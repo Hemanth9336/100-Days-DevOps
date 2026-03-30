@@ -6,7 +6,7 @@
 
 The production support team at **xFusionCorp Industries** needs a Bash script to automate website backups.
 
-A static website is hosted on **App Server 3**, and the goal is to:
+A static website is hosted on **App Server 3**, and the goal is to -
 
 * Create a backup of the website media files
 * Store it locally
