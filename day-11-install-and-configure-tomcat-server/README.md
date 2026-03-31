@@ -6,7 +6,7 @@
 
 The Nautilus development team has built a Java-based application and wants to deploy it using a **Tomcat server** on **App Server 2**.
 
-The setup should ensure:
+The setup should ensure -
 
 * Tomcat is installed and configured
 * Runs on a custom port (`8085`)
