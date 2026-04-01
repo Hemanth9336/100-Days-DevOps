@@ -6,7 +6,7 @@
 
 The monitoring system reported that **Apache service is not reachable on port 8084** on one of the application servers in Stratos Datacenter.
 
-Possible causes:
+Possible causes -
 
 * Apache service not running
 * Incorrect port configuration
