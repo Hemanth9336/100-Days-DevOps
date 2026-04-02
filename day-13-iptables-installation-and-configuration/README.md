@@ -6,7 +6,7 @@
 
 The security team identified that **application port 3004 is open to all traffic**, which is a security risk.
 
-To secure the infrastructure, we need to:
+To secure the infrastructure, we need to -
 
 * Restrict access to this port
 * Allow only trusted traffic from Load Balancer
