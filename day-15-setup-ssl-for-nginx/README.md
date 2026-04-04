@@ -6,7 +6,7 @@
 
 The system admin team needs to prepare **App Server 2** for application deployment by configuring a secure web server using **Nginx with SSL**.
 
-We are provided with:
+We are provided with -
 
 * A self-signed certificate
 * A private key
