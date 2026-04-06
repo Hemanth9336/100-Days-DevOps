@@ -7,7 +7,8 @@
 The application team requires a PostgreSQL database setup for deploying a new application.
 
 PostgreSQL is already installed on the **Database Server (stdb01)**.
-We need to configure:
+
+We need to configure -
 
 * A database user
 * A database
