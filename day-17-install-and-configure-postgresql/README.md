@@ -109,7 +109,7 @@ GRANT ALL PRIVILEGES ON DATABASE kodekloud_db5 TO kodekloud_sam;
 
 ## 🧪 Verification
 
-### Connect using new user:
+### Connect using new user
 
 ```bash
 psql -U kodekloud_sam -d kodekloud_db5
