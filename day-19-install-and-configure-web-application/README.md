@@ -4,7 +4,7 @@
 
 ## 🧠 Problem Statement
 
-The team needs to prepare **App Server 1** to host two static websites:
+The team needs to prepare **App Server 1** to host two static websites
 
 * `media`
 * `apps`
