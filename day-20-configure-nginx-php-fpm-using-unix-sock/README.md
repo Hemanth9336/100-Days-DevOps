@@ -4,7 +4,7 @@
 
 ## 🧠 Problem Statement
 
-The development team is deploying a **PHP-based application** on **App Server 1** and requires a properly configured environment using:
+The development team is deploying a **PHP-based application** on **App Server 1** and requires a properly configured environment using
 
 * **Nginx (web server)**
 * **PHP-FPM 8.1 (application processor)**
