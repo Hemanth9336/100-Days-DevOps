@@ -6,7 +6,7 @@
 
 The development team requires a **central Git repository** to manage code for a new application.
 
-We need to:
+We need to
 
 * Install Git on the **Storage Server**
 * Create a **bare repository** for collaboration
