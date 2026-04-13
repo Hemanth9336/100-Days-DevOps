@@ -6,7 +6,7 @@
 
 The development team wants to implement new features without affecting the main codebase.
 
-To achieve this, a **new branch** must be created from the `master` branch in the repository:
+To achieve this, a **new branch** must be created from the `master` branch in the repository
 
 ```bash
 /usr/src/kodekloudrepos/games
@@ -78,7 +78,7 @@ git config --global --add safe.directory /usr/src/kodekloudrepos/games
 git branch
 ```
 
-👉 Output:
+👉 Output
 
 ```bash
 * kodekloud_games
