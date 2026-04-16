@@ -4,7 +4,7 @@
 
 ## 🧠 Problem Statement
 
-The development team reported issues with the latest commit in the repository:
+The development team reported issues with the latest commit in the repository
 
 ```bash
 /usr/src/kodekloudrepos/beta
