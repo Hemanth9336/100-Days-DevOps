@@ -6,13 +6,13 @@
 
 The Nautilus development team is working on a repository
 
-```bash
+```
 /opt/apps.git
 ```
 
 Cloned at
 
-```bash
+```
 /usr/src/kodekloudrepos/apps
 ```
 
@@ -20,14 +20,14 @@ Cloned at
 
 * Two branches
 
-  * `master`
-  * `feature`
+  * master
+  * feature
 
-* A developer wants to move **only one specific commit** to `master`
+* A developer wants to move only one specific commit to master
 
 * Target commit message
 
-```bash
+```
 Update info.txt
 ```
 
@@ -37,28 +37,28 @@ Update info.txt
 
 ## 🛠️ Step-by-Step Execution
 
-### 🔹 1. Navigate to Repository
+### 🔹 1 Navigate to Repository
 
-```bash
+```
 cd /usr/src/kodekloudrepos/apps
 ```
 
 ---
 
-### 🔹 2. Verify Files
+### 🔹 2 Verify Files
 
-```bash
+```
 ls -l
 ```
 
 Files present
 
-* `info.txt`
-* `welcome.txt`
+* info.txt
+* welcome.txt
 
 Check content
 
-```bash
+```
 cat info.txt
 ```
 
@@ -70,9 +70,9 @@ Welcome to xFusionCorp Industries!
 
 ---
 
-### 🔹 3. Check Branches
+### 🔹 3 Check Branches
 
-```bash
+```
 git branch
 ```
 
@@ -85,9 +85,9 @@ Output
 
 ---
 
-### 🔹 4. Identify Required Commit
+### 🔹 4 Identify Required Commit
 
-```bash
+```
 git log --oneline
 ```
 
@@ -95,24 +95,24 @@ Output
 
 ```
 3f5ed40 Update welcome.txt
-3f98248 Update info.txt   ✅ (Target Commit)
+3f98248 Update info.txt   (Target Commit)
 1d06d43 Add welcome.txt
 0d48d52 initial commit
 ```
 
 ---
 
-### 🔹 5. Switch to Master Branch
+### 🔹 5 Switch to Master Branch
 
-```bash
+```
 git checkout master
 ```
 
 ---
 
-### 🔹 6. Cherry-Pick the Commit
+### 🔹 6 Cherry-Pick the Commit
 
-```bash
+```
 git cherry-pick 3f98248
 ```
 
@@ -125,9 +125,9 @@ Output
 
 ---
 
-### 🔹 7. Push Changes
+### 🔹 7 Push Changes
 
-```bash
+```
 git push origin master
 ```
 
@@ -144,11 +144,8 @@ To /opt/apps.git
 
 ### 🔸 Check Files
 
-```bash
-ls -l
 ```
-
-```bash
+ls -l
 cat info.txt
 ```
 
@@ -162,14 +159,14 @@ Welcome to xFusionCorp Industries!
 
 ### 🔸 Verify Commit History
 
-```bash
+```
 git log --oneline
 ```
 
 Output
 
 ```
-72d85aa Update info.txt   ✅ (Cherry-picked)
+72d85aa Update info.txt   (Cherry-picked)
 1d06d43 Add welcome.txt
 0d48d52 initial commit
 ```
@@ -189,7 +186,7 @@ Output
 
 ### 🔹 What is Cherry-Pick
 
-* Applies a **specific commit** from one branch to another
+* Applies a specific commit from one branch to another
 
 ### 🔹 Why Use It
 
@@ -201,11 +198,11 @@ Output
 
 ## ⚠️ Common Issues
 
-| Issue          | Solution                                                      |
-| -------------- | ------------------------------------------------------------- |
-| Merge conflict | Resolve manually → `git add .` → `git cherry-pick --continue` |
-| Wrong commit   | Use `git log --oneline` carefully                             |
-| Push rejected  | Pull latest changes → retry push                              |
+| Issue          | Solution                                                  |
+| -------------- | --------------------------------------------------------- |
+| Merge conflict | Resolve manually → git add . → git cherry-pick --continue |
+| Wrong commit   | Use git log --oneline carefully                           |
+| Push rejected  | Pull latest changes → retry push                          |
 
 ---
 
@@ -224,7 +221,7 @@ Output
 
 This task demonstrates
 
-* Practical use of `git cherry-pick`
+* Practical use of git cherry-pick
 * Working with branches safely
 * Maintaining clean production-ready history
 
