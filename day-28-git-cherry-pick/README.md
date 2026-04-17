@@ -1,6 +1,6 @@
 ---
 
-# 🚀 Day 28: Git Cherry-Pick
+# 🚀 Day 28 Git Cherry-Pick
 
 ## 📌 Task Overview
 
@@ -22,8 +22,10 @@ Cloned at
 
   * `master`
   * `feature`
+
 * A developer wants to move **only one specific commit** to `master`
-* Target commit message:
+
+* Target commit message
 
 ```bash
 Update info.txt
@@ -49,18 +51,18 @@ cd /usr/src/kodekloudrepos/apps
 ls -l
 ```
 
-Files present:
+Files present
 
 * `info.txt`
 * `welcome.txt`
 
-Check content:
+Check content
 
 ```bash
 cat info.txt
 ```
 
-Output:
+Output
 
 ```
 Welcome to xFusionCorp Industries!
@@ -74,7 +76,7 @@ Welcome to xFusionCorp Industries!
 git branch
 ```
 
-Output:
+Output
 
 ```
 * feature
@@ -89,7 +91,7 @@ Output:
 git log --oneline
 ```
 
-Output:
+Output
 
 ```
 3f5ed40 Update welcome.txt
@@ -114,7 +116,7 @@ git checkout master
 git cherry-pick 3f98248
 ```
 
-Output:
+Output
 
 ```
 [master 72d85aa] Update info.txt
@@ -129,7 +131,7 @@ Output:
 git push origin master
 ```
 
-Output:
+Output
 
 ```
 To /opt/apps.git
@@ -150,7 +152,7 @@ ls -l
 cat info.txt
 ```
 
-Output:
+Output
 
 ```
 Welcome to xFusionCorp Industries!
@@ -164,7 +166,7 @@ Welcome to xFusionCorp Industries!
 git log --oneline
 ```
 
-Output:
+Output
 
 ```
 72d85aa Update info.txt   ✅ (Cherry-picked)
@@ -176,8 +178,8 @@ Output:
 
 ## 🎯 Result
 
-* Successfully cherry-picked only **required commit**
-* Avoided merging incomplete `feature` branch
+* Successfully cherry-picked only required commit
+* Avoided merging incomplete feature branch
 * Changes pushed to remote repository
 * Clean Git history maintained
 
@@ -185,15 +187,15 @@ Output:
 
 ## 🧠 Key Learnings
 
-### 🔹 What is Cherry-Pick?
+### 🔹 What is Cherry-Pick
 
 * Applies a **specific commit** from one branch to another
 
-### 🔹 Why Use It?
+### 🔹 Why Use It
 
 * Selective changes
 * Avoid full branch merge
-* Useful for hotfixes & partial deployments
+* Useful for hotfixes and partial deployments
 
 ---
 
@@ -220,7 +222,7 @@ Output:
 
 ## 📎 Summary
 
-This task demonstrates:
+This task demonstrates
 
 * Practical use of `git cherry-pick`
 * Working with branches safely
