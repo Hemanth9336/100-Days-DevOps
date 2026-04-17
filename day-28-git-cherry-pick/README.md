@@ -10,7 +10,7 @@ The Nautilus development team is working on a repository
 /opt/apps.git
 ```
 
-Cloned at:
+Cloned at
 
 ```bash
 /usr/src/kodekloudrepos/apps
@@ -18,7 +18,7 @@ Cloned at:
 
 ### 🧩 Requirement
 
-* Two branches:
+* Two branches
 
   * `master`
   * `feature`
