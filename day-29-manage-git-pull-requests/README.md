@@ -87,9 +87,5 @@ Check branches:
 
 ```bash
 git branch -a
-```
-
-
-
 
 
