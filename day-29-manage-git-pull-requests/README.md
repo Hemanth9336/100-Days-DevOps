@@ -35,7 +35,7 @@ We need to:
 ### 🔐 Step 1: Access Storage Server
 
 
-Login using SSH
+Login using SSH:
 
 
 ```bash
@@ -53,7 +53,7 @@ Navigate to Max’s home directory and locate the cloned repository.
 ### 📂 Step 2: Verify Repository Contents
 
 
-Check available files
+Check available files:
 
 
 ```bash
@@ -61,7 +61,7 @@ ls
 ```
 
 
-View commit history:\
+View commit history:
 
 
 ```bash
@@ -69,7 +69,7 @@ git log
 ```
 
 
-✅ Validate
+✅ Validate:
 
 
 * Author name (Max / Sarah)
@@ -79,4 +79,15 @@ git log
 
 ---
 
-Optional
+
+### 🌿 Step 3: Confirm Feature Branch
+
+
+Max has already pushed code to:
+
+
+```
+story/fox-and-grapes
+```
+
+
