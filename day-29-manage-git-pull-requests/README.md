@@ -1,59 +1,50 @@
----
-
-
+````markdown
 # 🚀 Day 29 – Managing Git Pull Requests (PR)
 
 
 ## 📌 Objective
-
-
-Ensure code quality and review process by **preventing direct pushes to the `master` branch** and enforcing changes via **Pull Requests (PRs)**.
+Enforce a proper Git workflow by **restricting direct pushes to the `master` branch** and ensuring all changes go through a **Pull Request (PR) with review and approval**.
 
 
 ---
 
 
 ## 🧠 Scenario
+Max has written a new story **“The Fox and Grapes 🦊🍇”** and pushed it to a feature branch.
 
 
-Max has added a new story (`The Fox and Grapes 🦊🍇`) in a feature branch.
-We need to:
-
-
-* Verify repository contents
-* Create a Pull Request
-* Assign a reviewer
-* Approve and merge changes
+Goal:
+- Verify repository and commit history  
+- Create a Pull Request  
+- Assign a reviewer  
+- Approve and merge changes into `master`  
 
 
 ---
 
 
-## 🛠️ Task Breakdown
+## 🛠️ Step-by-Step Implementation
 
 
-### 🔐 Step 1: Access Storage Server
-
-
-Login using SSH:
+### 🔐 1. SSH into Storage Server
 
 
 ```bash
 ssh max@ststor01
 # Password: [Credentials]
-```
+````
 
 
-Navigate to Max’s home directory and locate the cloned repository.
+Navigate to the repository in Max's home directory.
 
 
 ---
 
 
-### 📂 Step 2: Verify Repository Contents
+### 📂 2. Verify Repository Contents
 
 
-Check available files:
+List files:
 
 
 ```bash
@@ -61,7 +52,7 @@ ls
 ```
 
 
-View commit history:
+Check commit history:
 
 
 ```bash
@@ -72,22 +63,33 @@ git log
 ✅ Validate:
 
 
-* Author name (Max / Sarah)
+* Author details (Max / Sarah)
 * Commit messages
-* Branch history
+* Existing changes in repository
 
 
 ---
 
 
-### 🌿 Step 3: Confirm Feature Branch
+### 🌿 3. Verify Feature Branch
 
 
-Max has already pushed code to:
+Max pushed changes to:
 
 
 ```
 story/fox-and-grapes
 ```
+
+
+Check branches:
+
+
+```bash
+git branch -a
+```
+
+
+
 
 
