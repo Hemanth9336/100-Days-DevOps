@@ -4,7 +4,7 @@
 
 ## 🧠 Problem Statement
 
-The development team is working on a repository:
+The development team is working on a repository
 
 ```bash
 /opt/games.git
