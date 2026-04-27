@@ -13,7 +13,7 @@ Application Server 1 (stapp01)
 ### Requirement
 
 * Create a container named `nginx_1`
-* Use image - `nginx:alpine`
+* Use image: `nginx:alpine`
 * Ensure the container is **running**
 
 ---
