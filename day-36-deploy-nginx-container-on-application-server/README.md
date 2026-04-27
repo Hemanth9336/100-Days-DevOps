@@ -10,7 +10,7 @@ The Nautilus DevOps team is testing container-based deployments and needs to run
 Application Server 1 (stapp01)
 ```
 
-### Requirement
+## Requirement
 
 * Create a container named `nginx_1`
 * Use image: `nginx:alpine`
