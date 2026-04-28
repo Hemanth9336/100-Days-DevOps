@@ -12,7 +12,7 @@ The Nautilus DevOps team has a confidential encrypted file on
 
 A container named **`ubuntu_latest`** is already running on **Application Server 3 (`stapp03`)**.
 
-### Requirement:
+### Requirement
 
 * Copy the file into the container
 * Destination path inside container: `/opt/`
