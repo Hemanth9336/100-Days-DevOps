@@ -4,7 +4,7 @@
 
 ## 🧠 Problem Statement
 
-The Nautilus DevOps team has a confidential encrypted file on:
+The Nautilus DevOps team has a confidential encrypted file on
 
 ```bash
 /tmp/nautilus.txt.gpg
