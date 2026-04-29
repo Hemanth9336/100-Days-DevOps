@@ -4,13 +4,11 @@
 
 ## 🧠 Problem Statement
 
-The Nautilus DevOps team needs to prepare a container image for testing on
+The Nautilus DevOps team needs to prepare a container image for testing on **Application Server 2 (`stapp02`)**.
 
-```bash id="b2k91z"
-Application Server 2 (stapp02)
-```
+---
 
-### Requirement
+## 📋 Requirements
 
 * Pull Docker image: `busybox:musl`
 * Create a new tag: `busybox:blog`
@@ -19,43 +17,17 @@ Application Server 2 (stapp02)
 
 ## 🎯 Objective
 
-* Pull image from Docker registry
-* Create a new tag from existing image
+* Pull the required image from Docker Hub
+* Create a new tag from the existing image
 * Verify both images locally
-
----
-
-## 🏗️ Infrastructure Details
-
-| Server Name        | Hostname | User  | Purpose                 |
-| ------------------ | -------- | ----- | ----------------------- |
-| Application Server | stapp02  | steve | Docker Image Management |
-
----
-
-## ⚙️ Prerequisites
-
-* Docker installed and running
-* Access to `stapp02`
-* Root or sudo privileges
-
----
-
-## 🧠 Key Concepts
-
-* **Docker Image** → Read-only template used to create containers
-* **Tagging** → Creating another reference name for the same image
-* **busybox** → Lightweight Linux image used for testing
 
 ---
 
 ## 🛠️ Implementation Steps
 
----
-
 ### 1️⃣ Connect to Application Server
 
-```bash id="k4q7ne"
+```bash id="t8w3h9"
 ssh steve@stapp02
 ```
 
@@ -63,7 +35,7 @@ ssh steve@stapp02
 
 ### 2️⃣ Switch to Root User
 
-```bash id="p9l2vd"
+```bash id="q2y6mz"
 sudo su -
 ```
 
@@ -71,21 +43,21 @@ sudo su -
 
 ### 3️⃣ Verify Docker Service
 
-```bash id="q1n5sz"
+```bash id="m1v8kp"
 systemctl status docker
 ```
 
 Ensure it shows:
 
-```id="2q9wke"
+```id="c6n9xd"
 active (running)
 ```
 
 ---
 
-### 4️⃣ Pull Required Image
+### 4️⃣ Pull the Image
 
-```bash id="1g9y1c"
+```bash id="a4k7sl"
 docker pull busybox:musl
 ```
 
@@ -93,7 +65,7 @@ docker pull busybox:musl
 
 ### 5️⃣ Re-Tag the Image
 
-```bash id="wq2k3l"
+```bash id="z9d2fj"
 docker tag busybox:musl busybox:blog
 ```
 
@@ -101,78 +73,15 @@ docker tag busybox:musl busybox:blog
 
 ### 6️⃣ Verify Images
 
-```bash id="6zv5ma"
+```bash id="p3x6rq"
 docker images
 ```
 
-👉 Expected output should include:
+Expected output should include:
 
-```id="czf8qe"
+```id="y8v1nb"
 busybox   musl
 busybox   blog
-```
-
----
-
-## 🧪 Verification
-
-```bash id="n5k2ab"
-docker images | grep busybox
-```
-
----
-
-## 🚨 Troubleshooting
-
-### 🔹 Image not found
-
-```bash id="1w2e0g"
-docker pull busybox:musl
-```
-
----
-
-### 🔹 Docker not running
-
-```bash id="3l0rzn"
-systemctl start docker
-```
-
----
-
-### 🔹 Permission issues
-
-```bash id="r3l9ow"
-usermod -aG docker steve
-```
-
-(Re-login required)
-
----
-
-## 🔍 Key Concepts
-
-| Concept     | Description                        |
-| ----------- | ---------------------------------- |
-| docker pull | Downloads image from registry      |
-| docker tag  | Creates new tag for existing image |
-| Repository  | Collection of tagged images        |
-
----
-
-## 💡 Key Learnings
-
-* Pulling images from Docker Hub
-* Tagging images for different use cases
-* Managing local Docker images
-* Understanding image naming conventions
-
----
-
-## 🔁 Workflow
-
-```bash id="5l2g7k"
-pull image → tag image → verify
 ```
 
 ---
@@ -187,6 +96,4 @@ pull image → tag image → verify
 
 ## 🚀 Summary
 
-Pulled a Docker image and created a custom tag for testing — a common practice in container workflows to manage versions and environments efficiently.
-
----
+Successfully pulled a Docker image and created a custom tag, demonstrating how to manage and reuse images efficiently in containerized environments.
